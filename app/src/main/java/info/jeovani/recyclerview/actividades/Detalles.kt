@@ -3,7 +3,7 @@ package info.jeovani.recyclerview.actividades
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import info.jeovani.recyclerview.R
-import info.jeovani.recyclerview.clasesdatos.Pelicula
+import info.jeovani.recyclerview.clasesdatos.Libro
 import kotlinx.android.synthetic.main.activity_detalles.*
 
 class Detalles : AppCompatActivity() {
@@ -12,14 +12,15 @@ class Detalles : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles)
 
-        val pelicula = intent.getSerializableExtra("pel") as Pelicula
+        val libro = intent.getSerializableExtra("Peliculas") as Libro
 
-        adTvTitulo.text = getString(R.string.titulo, pelicula.titulo)
-        adTvDirector.text = getString(R.string.director, pelicula.director)
-        adTvGenero.text = getString(R.string.genero, pelicula.genero)
-        adTvCalificacion.text = getString(R.string.calificacion, pelicula.calificacion.toString())
-        adTvDuracion.text = getString(R.string.duracion, pelicula.duracion.toString())
-        adTvFecha.text = getString(R.string.fecha, pelicula.fecha)
+        amTvTitulo.text = getString(R.string.titulo, libro.titulo)
+        amTvAutor.text = getString(R.string.autor, libro.autor)
+        amTvGenero.text = getString(R.string.genero, libro.genero)
+        amTvAnio.text = getString(R.string.año, libro.año.toString())
+        amTvPaginas.text = getString(R.string.paginas, libro.paginas.toString())
+        amTvNumeroLectores.text = getString(R.string.numeroLectores, libro.numeroLectores.toString())
+        amTvCalificacion.text =  getString(R.string.calificacion, libro.calificacion.toString())
 
     }
 }

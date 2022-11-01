@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp"
-        android:orientation="vertical"
-        tools:context=".actividades.Detalles">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".actividades.DetallesAA">
 
     <TextView
-            android:id="@+id/amTvTitulo"
-            android:text="TextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="HardcodedText"/>
-
-    <TextView
-        android:id="@+id/amTvAutor"
+        android:id="@+id/amAATvTitulo"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/amTvGenero"
+        android:id="@+id/amAATvTutor"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/amTvAnio"
+        android:id="@+id/amAATvCategoria"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/amTvPaginas"
+        android:id="@+id/amAATvEmpieza"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/amTvNumeroLectores"
+        android:id="@+id/amAATvTermina"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
 
     <TextView
-        android:id="@+id/amTvCalificacion"
+        android:id="@+id/amAATvNumeroInscritos"
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/amAATvCalificacion"
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"/>
+
 </LinearLayout>

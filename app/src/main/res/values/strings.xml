@@ -1,16 +1,28 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Libros</string>
 
     <string name="titulo">Título: %1$s</string>
 
-    <string name="director">Director: %1$s</string>
+    <string name="autor">Autor: %1$s</string>
 
     <string name="genero">Genero: %1$s</string>
 
+    <string name="año">Año: %1$s</string>
+
+    <string name="paginas">Páginas: %1$s</string>
+
+    <string name="numeroLectores">Número de lectores: %1$s</string>
+
     <string name="calificacion">Calificación: %1$s</string>
 
-    <string name="duracion">Duración: %1$s minutos</string>
+    <string name="tutor">Tutor: %1$s</string>
 
-    <string name="fecha">Año: %1$s</string>
+    <string name="categoria">Categoria: %1$s</string>
+
+    <string name="empieza">Empieza: %1$s horas</string>
+
+    <string name="termina">Termina: %1$s horas</string>
+
+    <string name="numeroInscritos">Número de inscritos: %1$s</string>
 
 </resources>

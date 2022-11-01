@@ -3,8 +3,8 @@ package info.jeovani.recyclerview.actividades
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import info.jeovani.recyclerview.adaptadores.AdaptadorPeliculas
-import info.jeovani.recyclerview.clasesdatos.Pelicula
+import info.jeovani.recyclerview.adaptadores.AdaptadorLibros
+import info.jeovani.recyclerview.clasesdatos.Libro
 import info.jeovani.recyclerview.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,19 +14,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        amRvPeliculas.layoutManager = LinearLayoutManager(this)
-        amRvPeliculas.adapter = AdaptadorPeliculas(generarDatosPrueba(), this)
+        amRvLibros.layoutManager = LinearLayoutManager(this)
+        amRvLibros.adapter = AdaptadorLibros(generarDatosPrueba(), this)
 
     }
 
-    private fun generarDatosPrueba() : ArrayList<Pelicula>{
-        val lista = ArrayList<Pelicula>()
-        lista.add(Pelicula(R.drawable.interestelar, "Interestelar", "Christopher Nolan", "Ciencia ficción", 4.3, 169, "2014"))
-        lista.add(Pelicula(R.drawable.forma_agua, "La forma del agua", "Guillermo del Toro", "Cine fantástico", 3.65, 123, "2017"))
-        lista.add(Pelicula(R.drawable.extraordinario, "Extraordinario", "Stephen Chbosky", "Drama", 4.0, 113, "2017"))
-        lista.add(Pelicula(R.drawable.la_llegada, "La llegada", "Denis Villeneuve", "Ciencia ficción", 3.95, 116, "2016"))
-        lista.add(Pelicula(R.drawable.ex_maquina, "Ex-Máquina", "Alex Garland", "Ciencia ficción", 3.85, 108, "2015"))
-        lista.add(Pelicula(R.drawable.jumanji, "Jumanji: En la selva", "Jake Kasdan", "Acción", 3.5, 119, "2017"))
+    private fun generarDatosPrueba() : ArrayList<Libro>{
+        val lista = ArrayList<Libro>()
+        lista.add(Libro(R.drawable.alicia_aventuras, "Alicia En El Pais De Las Maravillas", "Lewis Carroll", "Literatura infantil", 1865, 143, 84, 4.5))
+        lista.add(Libro(R.drawable.fabrica_charlie, "Charlie y la fábrica de chocolate", "Roald Dahl", "Literatura infantil", 1964, 164, 34, 4.0))
+        lista.add(Libro(R.drawable.harry_potter, "Harry Potter y la piedra filosofal", "J. K. Rowling", "Literatura infantil", 1997, 320, 131, 4.7))
+        lista.add(Libro(R.drawable.matilda, "Matilda", "Roald Dahl\n", "Literatura infantil", 1988, 225, 66, 4.1))
+        lista.add(Libro(R.drawable.pinocho, "Las aventuras de Pinocho", "Carlo Collodi", "Literatura infantil", 1883, 156, 48, 3.9))
+        lista.add(Libro(R.drawable.principito, "El principito", "Antoine de Saint-Exupéry", "Literatura infantil", 1943, 81, 165, 4.8))
 
         return lista
     }
